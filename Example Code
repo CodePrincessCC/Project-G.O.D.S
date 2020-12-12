@@ -45,9 +45,10 @@
 </head>
 <body>
 
-<h2>What am I sharing?</h2>
+<h2>Control what you share with G.O.D.S</h2>
 <p>Hello User, </p>
 <p>Please decide what information you are comfortable sharing publicly. Our definition of public is anything that is personal information that can be seen by anyone who is not you. Please remember that certain aspects may not be an option to have private, if the option is something you strongly believe should be private we urge you to reevaluate the use of this product.</p>
+<p> Thank you and enjoy using G.O.D.S (Get Outta Data Sharing)</p>
 
 <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Full Name</button>

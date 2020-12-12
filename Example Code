@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #142954;
+  color: White;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: crosshair;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #aaa;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+<h2>What am I sharing?</h2>
+<p>Hello User, </p>
+<p>Please decide what information you are comfortable sharing publicly. Our definition of public is anything that is personal information that can be seen by anyone who is not you. Please remember that certain aspects may not be an option to have private, if the option is something you strongly believe should be private we urge you to reevaluate the use of this product.</p>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Full Name</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#Share Publicly">Share Publicly</a>
+    <a href="#Do Not Share">Do Not Share</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Personal Email</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#Share Publicly">Share Publicly</a>
+    <a href="#Do Not Share">Do Not Share</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Username</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#Required Share">Required Share</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Phone Number</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#Share Publicly">Share Publicly</a>
+    <a href="#Do Not Share">Do Not Share</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Location</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#Share Publicly">Share Publicly</a>
+    <a href="#Do Not Share">Do Not Share</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
